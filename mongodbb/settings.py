@@ -29,8 +29,12 @@ SECRET_KEY = 'django-insecure-upud=l*azk5bb=#dt_rt@jd*!#r+vb=+c-7ee_hk8*$edj75xd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'backend-website-grader.onrender.com',  
+    'localhost',                             
+    '127.0.0.1',  
+]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 # Application definition
 

@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 MONGODB_SETTINGS = {
-    'host': os.environ.get('MONGO_URI', 'mongodb+srv://root:S@nCybySama@cluster0.lq35h.mongodb.net/grader')
+    'host': os.environ.get('MONGO_URI', 'mongodb+srv://root:RHVvLbi5tJgqUxzm@cluster0.lq35h.mongodb.net/grader')
 }
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

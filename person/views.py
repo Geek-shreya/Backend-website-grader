@@ -12,8 +12,8 @@ class MyDataView(View):
     @csrf_exempt 
     def get(self, request):
         try:
-            client = MongoClient('mongodb://localhost:27017')
-            db = client['emails']  
+            client = MongoClient('mongodb+srv://root:S@nCybySama@cluster0.lq35h.mongodb.net')
+            db = client['grader']  
             collection = db['user']  
             data = list(collection.find())
             data = [{**doc, "_id": str(doc["_id"])} for doc in data]
@@ -26,8 +26,8 @@ class MyDataView(View):
     @csrf_exempt 
     def post(self, request):
         try:
-            client = MongoClient('mongodb://localhost:27017')
-            db = client['emails']
+            client = MongoClient('mongodb+srv://root:S@nCybySama@cluster0.lq35h.mongodb.net')
+            db = client['grader']
             collection = db['user']
             
             if request.content_type == 'application/json':

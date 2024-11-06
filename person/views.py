@@ -12,7 +12,7 @@ class MyDataView(View):
     @csrf_exempt 
     def get(self, request):
         try:
-            client = MongoClient('mongodb+srv://root:S@nCybySama@cluster0.lq35h.mongodb.net')
+            client = MongoClient('mongodb+srv://root:RHVvLbi5tJgqUxzm@cluster0.lq35h.mongodb.net')
             db = client['grader']  
             collection = db['user']  
             data = list(collection.find())

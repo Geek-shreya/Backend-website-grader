@@ -37,6 +37,7 @@ ALLOWED_HOSTS = [
 # ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 CSRF_TRUSTED_ORIGINS = ['https://backend-website-grader.onrender.com']
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 

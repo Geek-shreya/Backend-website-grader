@@ -10,7 +10,6 @@ from .models import Email
 
 logger = logging.getLogger(__name__)
 
-@
 @method_decorator(csrf_exempt, name='dispatch')
 class MyDataView(View):
     def get(self, request):
